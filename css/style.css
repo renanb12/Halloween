@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('../img/wallpaper21.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#quiz-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 90vh;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #FFA500;
+    margin-bottom: 10px;
+}
+
+.question h2 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.options li {
+    margin: 10px 0;
+}
+
+.options button {
+    background-color: #252323;
+    color: #FFA500;
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #FFA500;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.options button:hover {
+    background-color: #FFA500;
+    color: #050404;
+    font-weight: 600;
+}
+
+#next-button {
+    background-color: #FFA500;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#next-button:hover {
+    background-color: #ffcc80;
+}
+
+#play-again {
+    display: none;
+    background-color: #333;
+    color: #FFA500;
+    padding: 10px 20px;
+    border: 2px solid #FFA500;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#play-again:hover {
+    background-color: #FFA500;
+    color: black;
+}
+
+#warning {
+    font-size: 0.9rem;
+    color: #FF6347;
+    font-weight: 600;
+    margin-top: 10px;
+    display: none;
+}
+
+#result {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+canvas {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 30rem !important;
+    height: 30rem !important;
+}

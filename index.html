@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <button id="userInfoButton">Informações do Usuário</button>
+    </header>
+
+    <div id="quiz-container">
+        <h1>Halloween Quiz</h1>
+        <div id="quiz"></div>
+        <button id="next-button" onclick="nextQuestion()">Next Question</button>
+        <div id="result">
+            <h2>Result</h2>
+            <canvas id="myChart" width="150" height="150"></canvas>
+            <p id="score-text"></p>
+            <button id="play-again" onclick="restartQuiz()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        // Redireciona para a página de informações do usuário
+        document.getElementById('userInfoButton').addEventListener('click', () => {
+            window.location.href = 'userinfo.html';
+        });
+
+        // Exibe ou oculta o botão "Informações do Usuário" baseado na fase do jogo
+        function toggleUserInfoButton(show) {
+            document.getElementById('userInfoButton').style.display = show ? 'block' : 'none';
+        }
+
+        // Chame toggleUserInfoButton(false) no final do quiz ou onde desejar esconder o botão
+        // Exemplo:
+        // toggleUserInfoButton(false); // Esconde o botão ao mostrar o resultado
+        // toggleUserInfoButton(true);  // Mostra o botão durante o quiz
+    </script>
+</body>
+</html>

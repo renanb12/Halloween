@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Usuário</title>
+    <link rel="stylesheet" href="css/userInfo.css">
+</head>
+<body>
+    <h1>Informações do Usuário</h1>
+    <div id="user-info">
+        <p><strong>Nome:</strong> <span id="user-name"></span></p>
+        <p><strong>Email:</strong> <span id="user-email"></span></p>
+        <p><strong>Pontuação Máxima:</strong> <span id="user-maxScore"></span></p>
+        <p><strong>Pontuação Mínima:</strong> <span id="user-minScore"></span></p>
+        <p><strong>Pontuação Atual:</strong> <span id="user-score"></span></p>
+    </div>
+
+    <!-- Formulário para alterar a senha -->
+    <h2>Alterar Senha</h2>
+    <div id="password-form">
+        <input type="password" id="new-password" placeholder="Nova Senha" required>
+        <button id="change-password-btn">Alterar Senha</button>
+    </div>
+
+    <!-- Botão para excluir a conta -->
+    <button id="delete-account-btn">Excluir Conta</button>
+
+    <button onclick="window.location.href='index.html'">Voltar ao Jogo</button>
+
+    <script src="js/userinfo.js"></script>
+</body>
+</html>
