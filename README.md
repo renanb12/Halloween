@@ -1,24 +1,80 @@
-# 🎃 Halloween-Quiz
+```markdown
+# Halloween Quiz Game 🎃
 
-![GitHub repo size](https://img.shields.io/github/repo-size/vitorlnm/Halloween-Quiz?style=for-the-badge)
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=COMPLETE&color=3CB371&style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/vitorlnm/Halloween-Quiz?style=for-the-badge)
-![Badge Aviso](https://img.shields.io/static/v1?label=Count%20Commits&message=5&color=FF8C00&style=for-the-badge)
+## Project Description
+This project is a Halloween-themed quiz game. Players answer questions related to Halloween and accumulate scores. Each user has an individual account where their highest, lowest, and current scores are saved and displayed in a user interface.
 
-<img src="https://images.pexels.com/photos/5634767/pexels-photo-5634767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="React Native">
+The game is built with HTML, CSS, and JavaScript on the front end, while the back end uses Express.js with MySQL for data storage.
 
-> - This activity was developed in the English class, with the theme of Halloween.
+## Setup and Installation
 
-### 🚀 | Installing the project
+### Required Dependencies
+Make sure to have the following installed before starting:
 
-To install the `Halloween Quiz` application, follow these steps:
+- **Node.js**: To run the Express.js server.
+- **MySQL**: For the database where user and score data are stored.
 
-In GitBash:
+Use `npm` to install project dependencies:
 
+```bash
+npm install express mysql jsonwebtoken bcrypt dotenv
 ```
-git clone https://github.com/vitorlnm/Halloween-Quiz.git
+
+### Installation and Configuration Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/renanb12/Halloween.git
+   cd Halloween
+   ```
+
+2. **Database Setup**:
+   - Use the SQL commands below to create the MySQL database and the necessary tables for the project.
+
+### SQL Commands to Create Database and Tables
+
+```sql
+CREATE DATABASE IF NOT EXISTS halloween;
+USE halloween;
+
+CREATE TABLE users (
+id INT NOT NULL UNIQUE AUTO_INCREMENT,
+name varchar(200),
+email varchar(200),
+password varchar(200),
+maxScore DECIMAL(10, 2),
+minScore DECIMAL(10, 2),
+score DECIMAL(10, 2),
+PRIMARY KEY(id)
+);
 ```
-## 🤝 Collaborators
+
+### Running the Server
+
+1. **Start the server**:
+   ```bash
+   node server.js
+   ```
+
+   The server should start at `http://localhost:3000`.
+
+2. **Access the Project**:
+   Open `http://localhost:3000` in a browser to access the game.
+
+## Usage
+
+- **Login and Registering New Users**: 
+  - On the homepage, new users can sign up, and existing users can log in.
+  
+- **Starting the Game**:
+  - After logging in, users are redirected to a screen asking if they want to start the game.
+  - Clicking "Play" will take them to the quiz.
+
+- **User Info and Scores**:
+  - During the game, users accumulate points, which are automatically saved at the end of each session.
+  - Users can access their highest score (`maxScore`), lowest score (`minScore`), and the score from their last game (`score`) on the user info page.
+
+## Authors
 
 <table>
   <tr>
@@ -57,7 +113,15 @@ git clone https://github.com/vitorlnm/Halloween-Quiz.git
         </sub>
       </a>
     </td>
+
+<td align="center">
+      <a href="#" title="Marcelo Boeira">
+        <img src="https://avatars.githubusercontent.com/u/136658914?v=4" width="100px;" alt="Luiz"/><br>
+        <sub>
+          <b>Marcelo Boeira</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 
 </table>
-
