@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações do Usuário</title>
+    <title>User Information</title>
     <link rel="stylesheet" href="css/userInfo.css">
 </head>
 <body>
-    <h1>Informações do Usuário</h1>
+    <h1>User Information</h1>
     <div id="user-info">
-        <p><strong>Nome:</strong> <span id="user-name"></span></p>
+        <p><strong>Name:</strong> <span id="user-name"></span></p>
         <p><strong>Email:</strong> <span id="user-email"></span></p>
-        <p><strong>Pontuação Máxima:</strong> <span id="user-maxScore"></span></p>
-        <p><strong>Pontuação Mínima:</strong> <span id="user-minScore"></span></p>
-        <p><strong>Pontuação Atual:</strong> <span id="user-score"></span></p>
+        <p><strong>Maximum Score:</strong> <span id="user-maxScore"></span></p>
+        <p><strong>Minimum Score:</strong> <span id="user-minScore"></span></p>
+        <p><strong>Current Score:</strong> <span id="user-score"></span></p>
     </div>
 
     <!-- Formulário para alterar a senha -->
-    <h2>Alterar Senha</h2>
+    <h2>Change Password</h2>
     <div id="password-form">
-        <input type="password" id="new-password" placeholder="Nova Senha" required>
-        <button id="change-password-btn">Alterar Senha</button>
+        <input type="password" id="new-password" placeholder="New Password" required>
+        <button id="change-password-btn" class="pass123">Change Password</button>
     </div>
 
     <!-- Botão para excluir a conta -->
-    <button id="delete-account-btn">Excluir Conta</button>
+    <button id="delete-account-btn">Delete Account</button>
 
-    <button onclick="window.location.href='index.html'">Voltar ao Jogo</button>
+    <button onclick="window.location.href='index.html'">Back to Game</button>
 
     <script src="js/userinfo.js"></script>
 </body>

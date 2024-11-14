@@ -14,6 +14,10 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -22,23 +26,93 @@ body {
     padding: 20px;
 }
 
-.user-info {
-    border-radius: 10px;
-    padding: 20px;
+h1, h2 {
+    color: #FFA500;
+    margin-bottom: 15px;
+}
+
+#user-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-info p {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
+#user-info strong {
+    display: block;
+    color: #ffcc80;
+    margin-bottom: 5px;
+}
+
+#user-info span {
+    display: block;
+    color: #fff;
+}
+
+#password-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+}
+
+#new-password {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #FFA500;
+    margin-bottom: 15px;
+    background-color: #252323;
+    color: #FFA500;
+    font-size: 1rem;
 }
 
 button {
-    background-color: #F77D24;
-    color: #fff;
+    width: 20%;
+    background-color: #FFA500;
+    color: black;
+    padding: 12px;
     border: none;
-    padding: 10px;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
     margin-top: 10px;
-    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #ff6a00;
+    background-color: #ffcc80;
+}
+
+#delete-account-btn {
+    background-color: #FF6347;
+}
+
+#delete-account-btn:hover {
+    background-color: #ff4c3b;
+}
+
+.pass123{
+    width: 100%;
+}
+
+#delete-account-btn{
+    margin-top: 80px;
 }
